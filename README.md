@@ -6,4 +6,4 @@
 
 
 ### Forge
-    !["Forge Result"](Assets/Forge/forgeResult.png)
+    ![Forge Effect](Assets/Forge/forgeResult.png)
