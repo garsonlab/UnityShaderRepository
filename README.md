@@ -6,6 +6,7 @@ Use Unity Version > 5
 
 
 ## 1. Forge
+### 1.1 
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Forge/forgeResult.png "Forge Render Effect")
 
 ## 2. Mask
@@ -52,3 +53,12 @@ Mask need Component "Rect Mask 2D" in parent, Only one DrawCall. Base on <SuperT
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft22.png "Mask Render Effect")
 
 ## 3 Toon
+### 3.1 Source from [Candycat1992](https://github.com/candycat1992)
+![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Toon/toon.png "Toon Render Effect")
+### 3.2 [ToonShading](https://github.com/Kink3d/ToonShading)
+![](https://camo.githubusercontent.com/049675b7900f1901b6d40a88a37877163c6d1ca4/68747470733a2f2f63646e612e61727473746174696f6e2e636f6d2f702f6173736574732f696d616765732f696d616765732f3030372f3132342f3634342f6c617267652f6d6174742d6465616e2d73637265656e73686f7430312e6a70673f31353033383732333234)
+
+
+## 4 Rain Effect
+### 4.1 Souce from [RainDropEffect](https://github.com/EdoFrank/RainDropEffect)
+![](https://raw.githubusercontent.com/EdoFrank/bin/master/RainDropEffect2/rde1.jpg)
