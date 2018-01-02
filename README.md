@@ -45,6 +45,7 @@ Use Unity Version 2017.2
 
 ##### Custom Soft Mask
 Mask need Component "Rect Mask 2D", Only one DrawCall.
+
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft1.png "Mask Render Effect")
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft11.png "Mask Render Effect")
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft2.png "Mask Render Effect")
