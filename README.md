@@ -1,16 +1,16 @@
-﻿## Unity Shader Repository
+﻿# Unity Shader Repository
 
-Use Unity Version 2017.2
-
-
+Use Unity Version > 5
 
 
-### Forge
+
+
+## 1. Forge
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Forge/forgeResult.png "Forge Render Effect")
 
-### Mask
-##### Rotate Mask
-```cpp
+## 2. Mask
+### 2.1 Rotate Mask
+```ShaderLab
     fixed4 frag (v2f i) : COLOR
     {
         float2 center = float2(_CenterX, _CenterY);//自定义旋转中心点
@@ -27,8 +27,8 @@ Use Unity Version 2017.2
 ```
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/rotateMask.gif "Rotate Mask Render Effect")
 
-##### Rect Soft Mask
-```cpp
+### 2.2 Rect Soft Mask
+```ShaderLab
     if (_UseClipRect) 
     {
         //根据世界坐标计算，源自NGUI
@@ -43,11 +43,12 @@ Use Unity Version 2017.2
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/rectMask.png "Rect Mask Render Effect")
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/rectMaskInspector.png "Rect Mask Image Inspector")
 
-##### Custom Soft Mask
-Mask need Component "Rect Mask 2D", Only one DrawCall.
+### 2.3 Custom Soft Mask
+Mask need Component "Rect Mask 2D" in parent, Only one DrawCall. Base on <SuperText>.
 
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft1.png "Mask Render Effect")
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft11.png "Mask Render Effect")
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft2.png "Mask Render Effect")
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft22.png "Mask Render Effect")
 
+## 3 Toon
