@@ -6,4 +6,4 @@
 
 
 ### Forge
-    ![ForgeEffect](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Forge/forgeResult.png)
+![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Forge/forgeResult.png)
