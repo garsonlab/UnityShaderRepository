@@ -83,11 +83,11 @@
 
 			fixed4 frag (v2f i) : SV_Target
 			{
-				fixed4 color = tex2D(_MainTex, IN.texcoord) * IN.color;
+				fixed4 color = tex2D(_MainTex, i.uv) * i.color;
 				fixed3 grey = dot(color.rgb, fixed3(0.22, 0.707, 0.071));
 				float blend = _Blend*(!_IsAnimate)+abs(sin(_Time.y*_Speed))*_IsAnimate;
 				color.rgb = lerp(color.rgb, grey, blend);
-				return col;
+				return color;
 			}
 			ENDCG
 		}
