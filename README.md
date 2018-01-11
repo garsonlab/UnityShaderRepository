@@ -8,12 +8,12 @@ Use Unity Version > 5
 [TOCM]
 
 
-## 1. Forge
+## 1. Forge 雾效
 ### 1.1 
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Forge/forgeResult.png "Forge Render Effect")
 
-## 2. Mask
-### 2.1 Rotate Mask
+## 2. Mask 裁剪
+### 2.1 Rotate Mask 旋转裁剪
 ```ShaderLab
     fixed4 frag (v2f i) : COLOR
     {
@@ -31,7 +31,7 @@ Use Unity Version > 5
 ```
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/rotateMask.gif "Rotate Mask Render Effect")
 
-### 2.2 Rect Soft Mask
+### 2.2 Rect Soft Mask 矩形软裁剪
 ```ShaderLab
     if (_UseClipRect) 
     {
@@ -47,7 +47,7 @@ Use Unity Version > 5
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/rectMask.png "Rect Mask Render Effect")
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/rectMaskInspector.png "Rect Mask Image Inspector")
 
-### 2.3 Custom Soft Mask
+### 2.3 Custom Soft Mask 自定义形状软裁剪，支持反转
 Mask need Component "Rect Mask 2D" in parent, Only one DrawCall. Base on <SuperText>.
 
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft1.png "Mask Render Effect")
@@ -55,20 +55,21 @@ Mask need Component "Rect Mask 2D" in parent, Only one DrawCall. Base on <SuperT
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft2.png "Mask Render Effect")
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIMask/soft22.png "Mask Render Effect")
 
-## 3 Toon
-### 3.1 Source from [Candycat1992](https://github.com/candycat1992)
+## 3 Toon 卡通
+### 3.1 Source from [Candycat1992](https://github.com/candycat1992) 
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Toon/toon.png "Toon Render Effect")
 ### 3.2 [ToonShading](https://github.com/Kink3d/ToonShading)
 ![](https://camo.githubusercontent.com/049675b7900f1901b6d40a88a37877163c6d1ca4/68747470733a2f2f63646e612e61727473746174696f6e2e636f6d2f702f6173736574732f696d616765732f696d616765732f3030372f3132342f3634342f6c617267652f6d6174742d6465616e2d73637265656e73686f7430312e6a70673f31353033383732333234)
 
 
-## 4 Rain Effect
+## 4 Rain Effect 雨效
 ### 4.1 Souce from [RainDropEffect](https://github.com/EdoFrank/RainDropEffect)
 ![](https://raw.githubusercontent.com/EdoFrank/bin/master/RainDropEffect2/rde1.jpg)
 
 
-## 5 Grey Effect
-### 5.1 Image Grey, Support UGUI Mask and RectMask
+## 5 Grey Effect 灰度化效果
+### 5.1 Image Grey, Support UGUI Mask and RectMask2D 图片灰度化，支持UGUI的Mask和RectMask2D下有效
 ### 5.2 Grey Effect, can reserve a *Rect* color window. Can use on Image and Camera effect.
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Grey/imageGrey.png "Image Grey")
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Grey/greyEffect.png "Grey Effect")
+### 5.3 Modify Image Grey, support animation. 修改图片灰度化，支持混合模式及缓动灰度化效果

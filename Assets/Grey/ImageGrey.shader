@@ -4,6 +4,10 @@
 	{
 		[PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}//UI Image上选择的图片
 		_Color ("Tint", Color) = (1,1,1,1)
+		_Blend ("Blend", Range(0,1)) = 1
+		[Toggle] _IsAnimate ("Is Animate", Float) = 0
+		_Speed ("Speed", float) = 2.5
+		[Space(20)]
 
 		// Required for UI.Mask
 		_StencilComp("Stencil Comparison", Float) = 8
@@ -58,7 +62,10 @@
 				fixed4 color : COLOR;
 			};
 
-			fixed4 _Color;			
+			fixed4 _Color;
+			float _Blend;
+			bool _IsAnimate;
+			float _Speed;		
 
 			v2f vert (appdata v)
 			{
@@ -76,8 +83,10 @@
 
 			fixed4 frag (v2f i) : SV_Target
 			{
-				fixed4 col = tex2D(_MainTex, i.uv) * i.color;
-				col.rgb = dot(col.rgb, fixed3(0.299, 0.587, 0.114));
+				fixed4 color = tex2D(_MainTex, IN.texcoord) * IN.color;
+				fixed3 grey = dot(color.rgb, fixed3(0.22, 0.707, 0.071));
+				float blend = _Blend*(!_IsAnimate)+abs(sin(_Time.y*_Speed))*_IsAnimate;
+				color.rgb = lerp(color.rgb, grey, blend);
 				return col;
 			}
 			ENDCG
