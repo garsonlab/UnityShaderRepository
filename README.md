@@ -75,5 +75,5 @@ Mask need Component "Rect Mask 2D" in parent, Only one DrawCall. Base on <SuperT
 ### 5.3 Modify Image Grey, support animation. 修改图片灰度化，支持混合模式及缓动灰度化效果
 
 ## 6 Particle Mask 粒子裁剪
-### 6.1 See [This, Particle Mask](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIParticleMask/README.md)
+### 6.1 See [This, Particle Mask](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIParticleMask)
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/UIParticleMask/clip.png)
