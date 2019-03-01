@@ -80,3 +80,12 @@ Mask need Component "Rect Mask 2D" in parent, Only one DrawCall. Base on <SuperT
 
 ## 7 [Rounded Rect 圆角矩形](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/RoundRect)
 ![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/RoundRect/roundRect.png)
+
+## 8 [Distortion 扭曲失真](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Distortion)
+[参考](http://www.imatest.com/docs/distortion_instructions/)
+![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Distortion/distortion.gif)
+![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Distortion/ghost.gif)
+![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Distortion/disturbance.gif)
+
+## 9 [Breath 呼吸](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Breath)
+![](https://github.com/garsonlab/UnityShaderRepository/raw/master/Assets/Breath/breath.gif)

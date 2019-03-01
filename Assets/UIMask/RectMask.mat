@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: RectMask
   m_Shader: {fileID: 4800000, guid: d2d3d5767552c234ca7ed1a5dceafd0f, type: 3}
-  m_ShaderKeywords: UNITY_UI_CLIP_RECT
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -68,10 +68,10 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
-    - _SoftClipBottom: 49
-    - _SoftClipLeft: 52
+    - _SoftClipBottom: 40
+    - _SoftClipLeft: 87
     - _SoftClipRight: 43
-    - _SoftClipTop: 49
+    - _SoftClipTop: 176
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Stencil: 0
